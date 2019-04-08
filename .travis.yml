@@ -1,0 +1,26 @@
+sudo: required
+services: docker
+language: node_js
+dist: xenial
+# env:
+#   - VAR=val
+
+
+#thanks to https://github.com/travis-ci/travis-ci/issues/5358#issuecomment-248915326
+
+cache:
+  directories:
+    - $HOME/todo
+
+before_install:
+  - nvm install node npm
+  - nvm use node
+
+script:
+  - sudo npm install -g terminalizer 
+  - mkdir test
+  - terminalizer record test
+  - cat test.txt
+  - echo 👂	📲	📡	🎙	🎶	🎼	📠	🛰️j
+  - terminalizer render test  -o test.gif
+
