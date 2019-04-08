@@ -1,0 +1,30 @@
+sudo: required
+services: docker
+language: minimal
+dist: xenial
+# env:
+#   - VAR=val
+
+
+#thanks to https://github.com/travis-ci/travis-ci/issues/5358#issuecomment-248915326
+
+cache:
+  directories:
+    - $HOME/todo
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y liblz4-tool
+  - sudo apt-get install curl software-properties-common
+  - curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+  - sudo apt-get install nodejs
+
+script:
+  - node -v 
+  - npm install -g terminalizer 
+  - mkdir test
+  - terminalizer record test
+  - cat test.txt
+  - echo 👂	📲	📡	🎙	🎶	🎼	📠	🛰️j
+  - terminalizer render test  -o test.gif
+
