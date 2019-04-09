@@ -12,10 +12,8 @@ cache:
   directories:
     - $HOME/todo
 
-#before_install:
-#  - nvm install node npm
-#  - nvm use node
-
+before_install:
+  - sudo apt-get -y update
 script:
-  - sudo apt-get install asciinema
+  - sudo apt-get -y install asciinema
   - asciinema -y -c "/bin/sh -c 'cat test.txt; echo 👂     📲      📡      🎙       🎶      🎼      📠      🛰️'" rec
