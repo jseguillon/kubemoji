@@ -18,9 +18,9 @@ Most of pods wait for tcp packets (🎵) and the most known song played on tcp p
 ```
             🐱(👂)     🧠(👂)
             |          |
-🍪🎵? ----> |          |
+🍪🎵? ---->|          |
             | -------> |   
-            | <--🍪🎵!-|
+            | <-🍪🎵!-|
     <------ | 
 ```
 
