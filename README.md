@@ -5,24 +5,11 @@
 # Story 
 
 Pods (🐱) live in a Cluster (🌌) world, which is made of Nodes (🏝), where the Pods (🐱) can live and use skills offered Containers (🧠).  
-```
-   |      | - 🐱(🧠🧠)
-   | - 🏝 - - 🐱(🧠)
-🌌 |      | - 🐱(🧠🧠🧠)
-   |
-   | - 🏝 - - 🐱(🧠) ...
-```
+<img src="./cluster.png" height="130"/>
 
 Most of pods wait for tcp packets (🎵) and the most known song played on tcp packets is the http song, known as the "cookie song) (🍪🎵). Pods can receive songs, because they listen on a Port 🐱(👂) and send song to their Container on theirs own Port. 
 
-```
-            🐱(👂)     🧠(👂)
-            |          |
-🍪🎵? ---->|          |
-            | -------> |   
-            | <-🍪🎵!-|
-    <------ | 
-```
+<img src="./cookie-song.png" height="130"/>
 
 # Main 
 
